@@ -1,0 +1,41 @@
+Playwright:
+installation : npm init playwright@latest
+select javascript
+
+run command : npx playwright test {filepath}
+Allure installation : 
+npm install --save-dev allure-playwright@latest
+npm install allure-commandline@latest
+ ** NOTE **
+ Install faker, winston and other required dependencies upon your requirement.
+
+
+
+
+Jenkins:
+
+Pre-requisite : Java JDK version 17 or 21 has to be installed in your PC.
+
+1. Download the Jenkins Installer: Visit the official Jenkins website (https://www.jenkins.io) and navigate to the Downloads page. Download the Windows installer package (usually an .msi file) compatible with your system.
+
+2. Run the Installer: Locate the downloaded .msi file and double-click on it to run the Jenkins installer. You may be prompted to grant administrative permissions.
+
+3. Select Installation Directory: In the installer window, select the installation directory for Jenkins. The default location is typically in the "Program Files" directory. You can choose a different directory if desired.
+
+4. Choose Installation Options: On the next screen, you can select additional installation options, such as creating shortcuts or configuring Jenkins to run as a Windows service. Make the desired selections and proceed.
+
+5. Customize Jenkins URL: In the subsequent screen, you can choose the Jenkins URL, which is the address you'll use to access the Jenkins web interface. By default, it will be http://localhost:8080. You can keep the default or specify a different URL if needed.
+
+6. Complete the Installation: After configuring the installation options, click on the "Install" button to start the installation process. Wait for the installer to complete the installation of Jenkins on your "Windows ${version}" system.
+
+7. Launch Jenkins: Once the installation is finished, you can choose to launch Jenkins automatically by keeping the corresponding checkbox selected. Otherwise, you can manually launch Jenkins later from the Start menu or desktop shortcut.
+
+8. Access Jenkins Web Interface: Open a web browser and enter the Jenkins URL (e.g., http://localhost:8080) in the address bar. The Jenkins web interface should load, and you'll be prompted to unlock Jenkins by entering the initial administrative password.
+
+9. Retrieve Initial Admin Password: To retrieve the initial administrative password, navigate to the Jenkins installation directory on your computer. Look for a file called "initialAdminPassword" and open it using a text editor. Copy the password and paste it into the Jenkins web interface to proceed.
+
+10. Follow Setup Wizard: The Jenkins setup wizard will guide you through the remaining configuration steps, including installing recommended plugins and creating the first administrative user. Follow the instructions on the screen to complete the setup.
+
+By following these steps, you can install Jenkins on Windows 11 and start using it for your continuous integration and continuous delivery (CI/CD) workflows.
+
+Note: Make sure your system meets the minimum requirements for running Jenkins, such as having Java Development Kit (JDK) installed.

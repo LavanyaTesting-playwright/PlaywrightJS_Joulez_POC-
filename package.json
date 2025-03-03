@@ -1,0 +1,27 @@
+{
+  "name": "playwright-framework",
+  "version": "1.0.0",
+  "description": "## Overview This project is a test automation framework built using [Playwright](https://playwright.dev/) for end-to-end testing of web applications. It aims to provide a robust and scalable solution for testing web applications across different browsers and platforms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.12",
+    "allure-playwright": "^2.15.1"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.29.0",
+    "dotenv": "^16.4.5",
+    "faker": "^5.5.3",
+    "playwright": "^1.44.0",
+    "winston": "^3.13.0"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
