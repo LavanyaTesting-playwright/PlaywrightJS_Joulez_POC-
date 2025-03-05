@@ -5,7 +5,7 @@ class LoginPage {
   constructor(test, page) {
     this.test = test;
     this.page = page;
-    this.login = page.locator("//div[text()='Log ']");
+    this.login = page.locator("//div[text()='Log in']");
     this.emailInput = page.locator("//input[@id='email']");
     this.passwordInput = page.locator("//input[@id='password']");
     this.loginButton = page.locator("(//button[text()='Log in'])[1]");
