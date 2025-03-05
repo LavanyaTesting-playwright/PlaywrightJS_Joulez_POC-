@@ -14,7 +14,7 @@ test.beforeEach("Launch URL", async ({ page }) => {
   );
 });
 
-test.only("Testing the login and logout functionality", async ({ page }) => {
+test("Testing the login and logout functionality", async ({ page }) => {
   await loginPage.loginFunctionality(process.env.email, process.env.password);
   await page.waitForTimeout(parseInt(process.env.small_timeout));
   await expect(loginPage.successMsg).toBeVisible();
