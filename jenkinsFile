@@ -50,7 +50,9 @@ pipeline {
             archiveArtifacts artifacts: 'test-results/**'
 
             echo 'Publishing Allure report...'
-            allure([results: [[path: 'allure-results']]])
+            allure([results: [[path: 'allure-results']],
+            commandline: 'Allure'
+            ])
         }
     }
 }
