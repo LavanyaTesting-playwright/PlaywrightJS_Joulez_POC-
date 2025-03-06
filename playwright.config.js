@@ -15,7 +15,7 @@ module.exports = defineConfig({
   /* Deletes the existing allure report files before test execution*/
   globalSetup: require.resolve("./global_setup.js"),
   /* Run tests in files in parallel */
-  fullyParallel: false,
+  fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -61,7 +61,6 @@ module.exports = defineConfig({
       use: {
         // Add your UI-specific configuration here
         browserName: "chromium", // or 'firefox', 'webkit'
-        headless: false,
         // Add any additional UI-specific settings here
       },
       testMatch: "tests/ui_tests.spec.js",
