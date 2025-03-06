@@ -61,6 +61,7 @@ module.exports = defineConfig({
       use: {
         // Add your UI-specific configuration here
         browserName: "chromium", // or 'firefox', 'webkit'
+        headless: false,
         // Add any additional UI-specific settings here
       },
       testMatch: "tests/ui_tests.spec.js",
