@@ -37,7 +37,7 @@ test("Book a vehicle successfully and verify confirm message", async ({
   );
   await loginPage.logoutFunctionality();
 });
-test.only("Verify booking fails with invalid login credentials", async ({
+test("Verify booking fails with invalid login credentials", async ({
   page,
 }) => {
   await vehicleBooking.selectLocation();
