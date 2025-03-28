@@ -56,10 +56,5 @@ test("Verify booking fails with invalid login credentials", async ({
     expect(vehicleBooking.invalidPasswordMsg).toHaveText(
       "Incorrect password, please try again "
     );
-    // await page.waitForLoadState("networkidle");
-    // await page.screenshot({
-    //   path: `test-results/error-screenshot-${Date.now()}.png`,
-    //   fullPage: true,
-    // });
   }
 });
