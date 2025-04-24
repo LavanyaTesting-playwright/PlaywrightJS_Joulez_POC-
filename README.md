@@ -19,7 +19,8 @@ Before you begin, ensure you have met the following requirements:
 ### Installation
 1. **Clone the repository:**
     ```bash
-   https://github.com/feuji-testing-frameworks/playwright-framework.git
+   https://github.com/LavanyaTesting-playwright/PlaywrightJS_Joulez_POC-.git
+ 
     cd playwright-js-project
     ```
 
